@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+  <title>Mentoria</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="info">
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </div>
+    </div>
+  </header>
+  <form id="my-form">
+    <div class="form"">
+        <fieldset>
+          <div class=" fieldset-1">
+      <legend>Informações pessoais</legend>
+      <div class="input-block">
+        <div class="block">
+          <div class="block-1">
+            <label for="info-name">Nome</label>
+            <input type="text" id="info-name" required />
+          </div>
+          <div class="block-2">
+            <label for="surname">Sobrenome</label>
+            <input type="text" id="surname" />
+          </div>
+        </div>
+        <label for="email">Email <span>(digite um email valido)</span></label>
+        <input type="email" id="email" required />
+        <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+        <input type="password" id="password" required minlength="6" />
+      </div>
+    </div>
+    <div class="fieldset">
+      <legend>Informações do mentor</legend>
+      <div class="input-block">
+        <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+        <input type="text" id="teacher-name" />
+      </div>
+    </div>
+    <div class="fieldset-2">
+      <legend>Seus horários disponíveis</legend>
+      <div class="input-block-3">
+        <h2>Primeira mentoria</h2>
+        <div class="block-main">
+          <div class="block-time">
+            <label for="available-schedule">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="available-schedule" required />
+          </div>
+          <div class="block-2">
+            <label for="start">Das</label>
+            <input type="time" id="start" required />
+          </div>
+          <div class="block-3">
+            <label for="end">Até</label>
+            <input type="time" id="end" required />
+          </div>
+        </div>
+      </div>
+      <div class="input-block-2">
+        <h2>Segunda mentoria</h2>
+        <div class="block-main">
+          <div class="block-time">
+            <label for="available-schedule">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="available-schedule" required />
+          </div>
+          <div class="block-2">
+            <label for="start">Das</label>
+            <input type="time" id="start" required />
+          </div>
+          <div class="block-3">
+            <label for="end">Até</label>
+            <input type="time" id="end" required />
+          </div>
+        </div>
+      </div>
+    </div>
+    </fieldset>
+    </div>
+  </form>
+  <footer>
+    <div class="footer">
+      <input type="submit" value="Salvar" form="my-form" />
+    </div>
+  </footer>
+</body>
+
+</html>
